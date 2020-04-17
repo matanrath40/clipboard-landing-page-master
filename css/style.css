@@ -11,11 +11,23 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(210, 10%, 33%);
 }
 
+ a {
+   color: hsl(210, 10%, 33%);
+   font-weight: 400;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
 
+ a:hover {
+   text-decoration: none;
+   color: hsl(171, 66%, 44%);
+ }
 
 p {
   color: hsl(201, 11%, 66%);
 }
+
+
 
 /* Header Section */
 
@@ -66,6 +78,8 @@ p {
 .ios-download-btn:hover {
 	text-decoration: none;
   color: #fff;
+  background-color: #2fc7af;
+
 
 }
 .ios-download-btn:active {
@@ -88,6 +102,7 @@ p {
 .mac-download-btn:hover {
 	text-decoration: none;
   color: #fff;
+  background-color: #a3adff;
 
 }
 .mac-download-btn:active {
@@ -170,6 +185,7 @@ p {
 .footer-logo {
   display: block;
   margin: auto;
+  margin-top: 25px;
   width: 30%;
 
 }
@@ -186,9 +202,30 @@ p {
 }
 
 .footer-box-social-media {
+  margin-top: 25px;
   padding-left: 250px;
 }
 
 .social-icon {
   margin: 5px;
+}
+
+.social-icon:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+/* Responsive to smaller sizes */
+
+@media (max-width: 1044px) {
+  .header-txt {
+    width: 68%;
+  }
+
+  .ios-download-btn {
+    width: 100%;
+  }
+
+  .mac-download-btn {
+    width: 100%;
+  }
 }
